@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <script src="/bower_components/angular/angular.min.js"></script>
+    <script src="/bower_components/angular-ui/build/angular-ui.min.js"></script>
+
+
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bower_components/bootstrap-material-design/dist/css/bootstrap-material-design.min.css">
+
+
+    <script src="/js/controllers.js"></script>
+    <script src="/js/module.js"></script>
+    <script src="/js/services.js"></script>
+
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+<body ng-app="myApp">
+    <h1>Product Organizer</h1>
+    <div>
+        I was stuck on a bug that affected the module not loading:
+        Uncaught Error: [$injector:nomod]
+        <p>
+            Unsuccessfully dealing with that consumed most of my time. I scoured online resources
+            and nothing seemed to take care of the bug. Everything pointed to potential syntax problems
+            with "myApp", but I believe each instance of "myApp" in this index.html, controllers.js, module.js, and services.js correspond with each other.
+        </p>
+        <p>
+            But I would like to convey that I was not lost in regard to the test's objective:
+            I understand the steps to initializing an Angular app -- by creating a module.js and controllers.js
+            file, and linking them inside the HTML. I understand that ng-app="${moduleName}" is attached to the body
+            to initialize the Angular Module, and that views are designated with the ui-view directive, and etcetera.
+        </p>
+
+        <p>
+            So What I have supplied in my code are the initial outlines to constructing the application for this particular
+            test. I was unable to get past the bug, and so I was unable to really test anything.
+            
+        </p>
+    </div>
+
+    <a ui-sref="home" class="btn btn-info">Home</a>
+
+    <div>
+        <ui-view></ui-view>
+    </div>
+
+
+</body>
+</html>
